@@ -28,7 +28,13 @@ Usage
 
 ㅡㅡ 여기까지 기본 리드미 파일 내용 ㅡㅡ
 
+# 1 Project Information
 
+
+# 2 Installation
+
+
+# 3 Source Code Exploration
 ## 1 Project Structure
 주요 파일 2-3개의 역할
 
@@ -73,3 +79,12 @@ export default function calculate(obj, buttonName) {
 - 사용자가 초기화 버튼 AC를 누르면 빈 상태(RESET_OBJ) 반환하여 화면을 지움
 - = 버튼을 누르면 지금까지 입력된 obj.operations를 operate 함수로 넘겨 계산 수행
 - 그 외 숫자나 기호 누르면 기존 수식 뒤에 글자를 그대로 이어 붙여 새로운 상태로 반환
+
+
+# 4 Customizing
+
+
+# 5 Deployment
+
+
+# 6 Weekly Review

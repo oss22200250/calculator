@@ -4,7 +4,7 @@ const RESET_OBJ = { total: null, operations: null, };
 
 export default function calculate(obj, buttonName) {
 
-  if (buttonName === "AC") {
+  if (buttonName === "Clear") {
     return RESET_OBJ;
   } else if (buttonName === "=") {
     return operate(obj.operations);

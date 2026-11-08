@@ -1,40 +1,13 @@
 Calculator
----
-<img src="Logotype primary.png" width="60%" height="60%" />
-
-Created with *create-react-app*. See the [full create-react-app guide](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
-
-
-
-Try It
----
-
-[sortizm.github.io/calculator](https://sortizm.github.io/calculator/)
-
-
-
-Install
----
-
-`npm install`
-
-
-
-Usage
----
-
-`npm start`
-
-
-ㅡㅡ 여기까지 기본 리드미 파일 내용 ㅡㅡ
-
 # 1 Project Information
 리액트를 활용해서 만든 계산기. 리액트에서 핵심인 상태와 컴포넌트를 공부하기 적합할 것 같아서 선택했다. 
 ### [원본 github url](https://github.com/sortizm/calculator)
  라이선스: MIT license
 
 # 2 Installation
-
+npm install로 설치, npm start로 실행
+## 실행 화면
+![계산기 화면](./Screenshot.png)
 
 # 3 Source Code Exploration
 ## 1 Project Structure
@@ -84,9 +57,36 @@ export default function calculate(obj, buttonName) {
 
 
 # 4 Customizing
+## 1 Text 수정
+- **수정 파일:** `src/components/ButtonPanel.js`, `src/logic/calculate.js`
+- **변경 전/후:** 초기화 버튼 이름이 AC에서 Clear로 변경
 
+## 2 Style 수정
+- **수정 파일:** `src/components/Button.css`
+- **변경 전/후:** `.component-button.orange` 클래스의 배경색을 주황에서 파랑으로 변경
+
+## 3 UI/Data 수정
+- **수정 파일:** `src/components/App.js`
+- **변경 전/후:** `<h1 style={{~}}>Calculator</h1> 추가
 
 # 5 Deployment
-
+[Vercel URL](calculator-awynr2fqd-oss22200250.vercel.app)
 
 # 6 Weekly Review
+## 새롭게 배운 내용
+- React는 화면을 작은 컴포넌트들로 쪼개서 관리!
+- Node.js 구버전으로 한 파일을 가져와서 쓰느라, fnm을 통해서 버전 스위칭하는 것을 배움 (fnm use 16)
+- fork, clone, vercel 배포와 github 다중 remote 연동 등 기존 과제들에도 사용했던 개념들이지만 이번 과제를 수행하며 보다 깊이 이해할 수 있었음
+
+## 어려웠던 점과 해결 방법
+
+- Node.js 충돌: npm start를 해도 실행 안 되고 오류가 계속 떴는데, 버전 문제임을 알게 됨.
+- 로컬에서는 node 버전을 16으로 다운그레이드해서 맞춰줌. vercel 배포할 때는 환경 변수 설정을 추가해주어 해결.
+
+## AI 활용 및 느낀 점
+
+- Text, Style, UI/Data 수정할 때 어떤 것을 수정하면 좋을지 추천받음
+- npm start 명령이 먹히지 않아 오류가 떴을 때 해결하는 과정(Node.js 버전 충돌 방지)에 도움 받음
+
+### 느낀 점
+리액트라는 개념을 말로 배울 때는 와닿지 않았는데, 직접 실습을 해보면서 더 깊이 깨닫게 되었다. 과제 수행 중에 유난히 오류가 많이 떴던 것 같은데, fnm으로 버전을 관리하고 vercel 배포 시 환경 변수를 세팅해 보면서 단순히 코드만 치는 것을 넘어서 배포 환경까지 제어하는 것을 학습했다. 그리고 이 역량을 키우는 것이 진짜 개발자로서 중요하다는 것을 느꼈다.

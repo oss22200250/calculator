@@ -17,6 +17,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="component-app">
+        <h1 style={{textAlign: "center", color: "#323", margin: "10px 0"}}>Calculator</h1>
         <Display total={this.state.total || "0"} operations={this.state.operations || "0"} />
         <ButtonPanel clickHandler={this.handleClick} />
       </div>

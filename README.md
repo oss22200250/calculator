@@ -29,7 +29,9 @@ Usage
 ㅡㅡ 여기까지 기본 리드미 파일 내용 ㅡㅡ
 
 # 1 Project Information
-
+리액트를 활용해서 만든 계산기. 리액트에서 핵심인 상태와 컴포넌트를 공부하기 적합할 것 같아서 선택했다. 
+### [원본 github url](https://github.com/sortizm/calculator)
+ 라이선스: MIT license
 
 # 2 Installation
 
